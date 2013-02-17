@@ -79,7 +79,7 @@ img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}
 
 /*--------GENERAL-------------*/
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	/*background: url(../images/back.png) repeat;*/
 	color: #677a83;	
 	font-size:100%;
@@ -96,7 +96,7 @@ a img {
 }
 a, a:visited {
 	text-decoration:none;
-	color: #888;
+	color: #000;
 }
 a:hover, a:active, a:focus { 
 	color: #ff6600;
@@ -117,13 +117,13 @@ h1 {font-size:2em;
 h2 {
 	font-size:24px;
 	color:#ffffff;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding: 0 0 10px 0;
 }
 h3 {
 	font-size:18px;
 	color:#000;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0 0 10px 0;
 	text-transform:uppercase;
     -webkit-background-clip: text;
@@ -131,7 +131,7 @@ h3 {
 
 h4{
 	font-size:15px;
-	font-weight:300;
+	font-weight:400;
 	margin-bottom:10px;
 	color:#000;
 	
@@ -144,11 +144,19 @@ p {
 	font-size:15px;
 	color:#444;
 	margin-bottom:10px;
+	font-weight:300;
 }
+
+p span{
+	color:#000;
+	font-weight:400;
+}
+	
 ul li {
 	list-style:none;
 	font-size:15px;
 	color:#444;
+	font-weight:300;
 }
 ::selection {
 	background: #fff195; /* Safari */
@@ -157,8 +165,8 @@ ul li {
 	background: #fff195; /* Firefox */
 }
 .line{
-	border-top:2px solid #FFF;
-	border-bottom:2px solid #EEE;
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #CCC;
 	margin:10px 0;
 	
 }
@@ -271,8 +279,8 @@ ul#navlist {
 #navlist li a { 
 	display: inline-block;
 	padding:22px 20px 20px 10px;
-	font-family: 'Raleway', sans-serif;
-	font-weight:700;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
 	text-transform: uppercase;
 	font-size: 16px;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
@@ -289,7 +297,7 @@ ul#navlist {
 	font-family: 'Oswald', sans-serif;
 	font-weight:300;
 	font-size: 3em;
-	margin:25px 0;
+	margin:20px 0;
 	text-transform:uppercase;
 	color: rgba(255,255,255,.5);
 	text-shadow: 0px -1px 0px rgba(0,0,0,.7);
@@ -311,7 +319,7 @@ font-weight: normal;
 .mob {display:none;}
 .details p{font-size:14px;}
 .links {margin: 18px 0 0;}
-.links li {margin: 0 3px 3px 0; padding: 5px 7px; display: inline-block; background: #F4F4F4; color: rgba(0, 0, 0, .45); font-size: 10px; letter-spacing: 1px; font-weight: 700; text-transform: uppercase; -webkit-border-radius: 2px; -moz-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; border:1px solid #DDD;}
+.links li {margin: 3px 3px 3px 0; padding: 5px 7px; display: inline-block; background: #F4F4F4; color: rgba(0, 0, 0, .45); font-size: 10px; letter-spacing: .1em; font-weight: 700; text-transform: uppercase; -webkit-border-radius: 2px; -moz-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; border:1px solid #DDD;}
 
 /*------------flexslider---------------------*/
 /* Browser Resets */
@@ -335,7 +343,6 @@ html.no-touch .work img{filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http:/
 
 html.no-touch .work:hover img{filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
     -webkit-filter: grayscale(0%);}
-html.no-touch .work:hover article{background-color:rgba(240,245,255,.3);cursor: default;}
 /* FlexSlider Necessary Styles
 *********************************/ 
 .flexslider {
@@ -385,33 +392,25 @@ html[xmlns] .slides {display: block;}
 /*------------footer design---------------------*/
 
 .socialmedia li{
-	float:left;
-	margin: 0 3px 3px 0; 
+	margin: 3px 3px 3px 0; 
 	display: inline-block; 
-	height:40px;
-	width:40px;
-	background: #F4F4F4; 
-	color: rgba(0, 0, 0, .45); 
-	font-size: 22px; 
-	letter-spacing: 1px; 
-	font-weight: 700; 
-	text-transform: uppercase; 
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%; 
-	-o-border-radius: 100%; 
-	border-radius: 100%; 
-	border:1px solid #DDD;
+	font-size: 30px; 
 	text-align:center;
-}
-.socialmedia li a{
 	cursor:default;
 }
 
+.socialmedia li a{
+	color: #000;
+}
+.socialmedia li:hover a{
+	color: #FF6600; 
+}
+	
 /*------------paper design---------------------*/
 
 .paper {
 	margin: 30px auto;
-	background: #F7F7F7;
+	background: #F9F9F9;
 	max-width: 1080px;
 	width: 90%;
 	background-image: url('../images/noise.png');
@@ -544,8 +543,13 @@ html[xmlns] .slides {display: block;}
 	transform: rotate(-3deg);
 	
 }
-
-
+.top-button{
+	bottom:0px;
+	text-align:center;
+}
+.totop {padding: 5px 10px 5px 41px; display: inline-block; background: url('../img/icon_totop.svg') no-repeat 10px 6px; color: #000; font-size: 16px; font-weight: 600; position: relative; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-backface-visibility: hidden;}
+.no-svg .totop {background-image: url('../img/icon_totop.png');}
+.totop:hover {background-color: #ffffff; -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -ms-transform: translateY(-3px); -o-transform: translateY(-3px); transform: translateY(-3px);}
 
 
 

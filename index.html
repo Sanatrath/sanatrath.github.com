@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UXGY</title>
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Oswald:300,700' rel='stylesheet' type='text/css'>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/fontello.css">
@@ -22,12 +22,6 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/script.js"></script>
 
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-	$.backstretch("img/bg_blur.jpg");
-  });
-</script>
 
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,11 +43,12 @@
                 
         <nav>
             <ul id="navlist">
-                <li class="about" id="active"><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#projects">Projects</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class=" line clearfloat"></div>
 		<div class="row">
         	<div id="hero-text" class="c12">
             	<h1>Interfaces <span class="amp">&amp; </span> Experiences</h1>
@@ -63,7 +58,7 @@
         	<div class="c8">
             	<h3 class="border-bottom">About Sanat</h3>
                 <p class="c6 nopad-left">Sanat is an Interaction Designer, Illustrator and Usability Researcher from India with more than 5 years of freelancing experience with start-ups and industry leaders. </p>
-                <p class="c6 nopad-left">He is currently pursuing his Master's in Human Computer Interaction at the Georgia Institute of Technology, Atlanta. His hobbies are designing and playing badminton.
+                <p class="c6 nopad-left">He is currently pursuing Master of Science in Human Computer Interaction at the Georgia Institute of Technology, Atlanta. His hobbies are designing and playing badminton.
                 </p>
             </div>
             <div class="c4">
@@ -84,14 +79,14 @@
                 <h1 class="border-bottom">Projects</h1>
                 <div class="swipe-hint  mob">Swipe through project images</div>
                 <h3 class="border-bottom">PeerSpot <span class="typeof"> / AR /<i class="icon-mobile"></i></span></h3>
-                <h4>After years of deferring to other projects, I finally worked on my personal branding materials. Among them was this site, the first portfolio design I've ever completed for myself; long overdue.</h4>
+                <h4>PeerSpot is an Augmented Reality iPhone companion app to help Georgia Tech students find the fastest mode of intra-campus transport in real time.</h4>
                     <div class="details">
-                    <p>Juggling various personal projects has since prevented me from designing a portfolio, but it was high time I carved out my tiny corner of the Internet. This site was a great opportunity </p>
+                    <p>With the user in a rush, the idea was to show only the most meaningful information to decide from after meticulously calculating &amp; comparing bus locations, occupancies, cycle availability and buffer times in the backend.</p>
                     </div>
                     <ul class="links">
-                      <li><a href="http://www.peerspot.com"><i class="icon-link-ext"></i> Project Website</a></li>
+                      <li><a href="http://www.peerspun.com"><i class="icon-link-ext"></i> Project Website</a></li>
                       <li><a href="http://www.peerspot.com"><i class="icon-doc-text"></i> Final Poster</a></li>
-                      <li><a href="http://www.peerspot.com"><i class="icon-videocam"></i> Video</a></li>
+                      <li><a href="http://www.youtube.com/watch?v=p1qR_wGKG9Y"><i class="icon-videocam"></i> Demo Video</a></li>
                     </ul>
                 </div>
                 <div class="c7">
@@ -120,12 +115,13 @@
         	<article class="row paddings">
                 <div class="description c5">
                 <h3 class="border-bottom">Awaaz <span class="typeof"> / AAC /<i class="icon-tablet"></i></span></h3>
-                <h4>After years of deferring to other projects, I finally worked on my personal branding materials. Among them was this site, the first portfolio design I've ever completed for myself; long overdue.</h4>
+                <h4>Awaaz is an Augmentative and Alternative Communication iPad app for 'technophilic' older adults with speech or language impairments.</h4>
                     <div class="details">
-                    <p>Juggling various personal projects has since prevented me from designing a portfolio, but it was high time I carved out my tiny corner of the Internet. This site was a great opportunity </p>
+                    <p>The goal of the system was to help users frame coherent meaningful sentences effectively and efficiently from simple contextual hints and with minimum stress on working memory. The app relies on visual modality and also accomodates the possibility of language changes.</p>
+                    <p><span>Usability Principles:</span> Visibility / Consistency / Error Correction / Auto-Suggestion / Feedback / Social Input</p>
                     </div>
                     	<ul class="links">
-                          <li><a href="http://www.peerspot.com"><i class="icon-videocam"></i> Video</a></li>
+                          <li><a href="http://www.youtube.com/watch?v=VC3PMpzKIBM"><i class="icon-videocam"></i> Demo Video</a></li>
                         </ul>
                 </div>
                 <div class="c7">
@@ -228,22 +224,29 @@
                     <h3 class="border-bottom">Email Elsewhere</h3>
                     <p>Looking to Talk? Questions? Comments? Send in a mail <a href="#">mail@sanatrath.com</a> </p>
                     <p>Find the UX Guy around the internet on these excellent sites:</p>
-                    <ul class="socialmedia">
-                    <li><a href="#"><span class="icon-facebook"></span> </a></li> 
-                    <li><a href="#"><span class="icon-twitter"></span> </a></li>
-                    <li><a href="#"><span class="icon-linkedin"></span> </a></li>
-                    <li><a href="#"><span class="icon-flickr"></span> </a></li>
-                    <li><a href="#"><span class="icon-dribbble"></span> </a></li>
-                    </ul>
+                    
                 </div>
        		</div>
-       
+            <div class="row paddings top-button">
+            <div class="c12">
+            <a class="totop scroll" href="*">Top</a>
+            </div>
+       		</div>
       
       
         </section>
         </div>
         <footer>
+        	
             <p>
+            	<ul class="socialmedia">
+                    <li><a href="#"><span class="icon-linkedin-circled"></span> </a></li>
+                    <li><a href="#"><span class="icon-twitter-circled"></span> </a></li>
+                    <li><a href="#"><span class="icon-facebook-circled"></span> </a></li> 
+                     <li><a href="#"><span class="icon-github-circled"></span> </a></li>
+                    <li><a href="#"><span class="icon-dribbble-circled"></span> </a></li>
+                    <li><a href="#"><span class="icon-flickr-circled"></span> </a></li> 
+                </ul>
                 Copyright &copy; Sanat Rath. All rights reserved. 
             </p>
         </footer>

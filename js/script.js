@@ -1,3 +1,35 @@
+
+
+
+var Application = {
+  init: function() {
+    var touch = Modernizr.touch,
+        clickEvent = (touch) ? "touchend" : "click";
+    
+    
+    $('.scroll').on(clickEvent, Application.scrollTo);
+    
+    if (touch) $('.totop').on("click", function(e){ e.preventDefault(); });
+  },
+  
+  
+  scrollTo: function(e) {
+    e.preventDefault();
+    $("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+		}, {
+			duration: 1000,
+			easing: "swing"
+		});
+		return false;
+  }
+};
+
+$(function(){
+  Application.init();
+});
+
+
 $(window).load(function() {
 	$('.flexslider').flexslider({ 
 		animation: "slide", 
@@ -18,15 +50,5 @@ $('article').hover(
         $(this).removeClass('focused');
       }
     );
-});
-
-$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-    e.preventDefault();
-    var target = this.hash;
-        $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-    }, 1000, function () {
-        window.location.hash = target;
-    });
+	$.backstretch("img/bg_blur.jpg");
 });
