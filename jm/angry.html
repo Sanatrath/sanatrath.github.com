@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/knobKnob.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="js/transform.js"></script>
+		<script src="js/knobKnob.jquery.js"></script>
+		<script src="js/script.js"></script>
+  
+<title>Jukemonkey</title>
+<script>
+var count = 1;
+function change()
+{
+	console.log("reached");
+	switch(count)
+	{
+	case 1: document.getElementById('audioplayer').src = 'angry2.mp3'; count++; break;
+	case 2: document.getElementById('audioplayer').src = 'angry3.mp3'; count++; break;
+	case 3: document.getElementById('audioplayer').src = 'angry1.mp3'; count = 1; break;
+	}
+}
+
+	</script>
+</head>
+ <body>
+ <div id="container">
+	<a href="mute_angry.html"><img class="emotion" src="angry.png" alt="face"></a>
+	<div class="player-controls">
+		<img class="skip" src="1.png" alt="controls" onclick="change()">
+		<div class="player">
+		<audio id="audioplayer" src="angry1.mp3" type="audio/mp3" preload="auto" autoplay="autoplay">
+			Your browser doesn't support the HTML audio tag. Be sad.
+		</audio>
+		</div>
+		<section id="main">
+			
+			<div id="bars">
+				<div id="control"></div>
+			</div>
+			
+		</section>
+	</div>
+	
+ </div>
+</body>
+</html>
