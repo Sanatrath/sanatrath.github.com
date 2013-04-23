@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/knobKnob.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="user.css" />
+	
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="js/transform.js"></script>
+		<script src="js/knobKnob.jquery.js"></script>
+		<script src="js/script.js"></script>
+
+
+<script>
+		
+//Page elements manipulation code follows
+var mood;
+var voteupflag = 0, votedownflag = 0;
+function changeimg(mood)
+{
+	switch(mood)
+	{
+		case "angry": mood = "angry"; document.getElementById('face').src = 'angry.png';break;
+		case "romantic": mood = "romantic"; document.getElementById('face').src = 'romantic.png';break;
+		case "happy": mood = "happy"; document.getElementById('face').src = 'happy.png';break;
+		case "sad": mood = "sad"; document.getElementById('face').src = 'sad.png';break;
+	}
+
+}
+function skipsong()
+{
+	var msg = "skip";
+//sendMessageToServer(msg);
+		
+}
+function mutesong()
+{
+	var msg = "mute";
+	//pass mute string to server
+	//sendMessageToServer(msg);
+
+}
+
+function voteu()
+{
+	if(!votedownflag)
+	{
+		if(voteupflag)
+		{document.getElementById('voteup').src= "voteup.png";
+		voteupflag = 0;
+		}
+		else
+		{document.getElementById('voteup').src= "voteuphover.png";
+		voteupflag = 1;
+		}
+	}
+}
+function voted()
+{
+	if(!voteupflag)
+	{
+		if(votedownflag)
+		{
+			document.getElementById('votedown').src= "votedown.png";
+			votedownflag = 0;
+		}
+		else
+		{
+			document.getElementById('votedown').src= "votedownhover.png";
+			votedownflag = 1;
+		}
+	}	
+} 
+</script>
+<title>Jukemonkey</title>
+
+</head>
+ <body>
+ <div id="container">
+	<img id = "mood" class="emotion" src="mute.png" alt="face" onclick="mutesong()">
+	<div class="player-controls">
+		<img id="skip" class="skip" src="1.png" alt="controls" onclick="skipsong()">
+		
+		<section id="main">
+			
+			<div id="bars">
+				<div id="control"></div>
+			</div>
+			
+		</section>
+	</div>
+	<div class="vote-controls">
+		<img class="vote" id="voteup" src="voteup.png" alt="controls" onclick="voteu()">
+		<img class="vote" id="votedown" src="votedown.png" alt="controls" onclick="voted()">
+	</div>	
+ </div>
+</body>
+</html>

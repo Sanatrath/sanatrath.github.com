@@ -46,8 +46,8 @@
 			
 				var offset = knob.offset();
 				var center = {
-					y : offset.top + knob.height()/2,
-					x: offset.left + knob.width()/2
+					y : offset.top + knob.height()/3,
+					x: offset.left + knob.width()/3
 				};
 				
 				var a, b, deg, tmp,

@@ -22,8 +22,8 @@ $(function(){
 		$('<div class="colorBar">').css({
 			backgroundColor: '#'+colors[i],
 			transform:'rotate('+deg+'deg)',
-			top: -Math.sin(deg/rad2deg)*70+100,
-			left: Math.cos((180 - deg)/rad2deg)*70+100,
+			top: -Math.sin(deg/rad2deg)*58+77,
+			left: Math.cos((180 - deg)/rad2deg)*58+61,
 		}).appendTo(bars);
 	}
 	

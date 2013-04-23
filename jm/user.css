@@ -37,12 +37,11 @@ body {
 	display: block;
 }
 #container img.emotion{
-	width: 100%;
+	width: 50%;
 	height: auto;
 	text-align: center;
 	margin: 0 auto;
-	
-	
+		
 }
 
 .player-controls{
@@ -50,8 +49,17 @@ body {
 	display: block;
 	float: left;
 	margin: auto;
-	height: 212px;
+	height: 155px;
 }
+
+.vote-controls{
+	width: 100%;
+	display: block;
+	float: left;
+	margin: auto;
+	height: 150px;
+}
+
 .player{
 	height: 100px;
 	float: left;
@@ -65,7 +73,14 @@ img.skip{
 	float: left;
 	height: 100px;
 	width: 100px;
-	margin:30px 10px 50px 40px;
+	margin:50px 10px 50px 50px;
+	
+}
+img.vote{
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin:50px 10px 50px 50px;
 	
 }
 
