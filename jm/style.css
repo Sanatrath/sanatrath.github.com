@@ -40,7 +40,7 @@ body {
 	width: 100%;
 	height: auto;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0px auto;
 	
 	
 }
@@ -49,8 +49,8 @@ body {
 	width: 100%;
 	display: block;
 	float: left;
-	margin: auto;
-	height: 212px;
+	margin: 5px auto 0;
+	height: 180px;
 }
 .player{
 	height: 100px;
@@ -65,13 +65,13 @@ img.skip{
 	float: left;
 	height: 100px;
 	width: 100px;
-	margin:30px 10px 50px 40px;
+	margin:30px 10px 10px 40px;
 	
 }
 
 #main{
-	height: 212px;
-	width: 228px;
+	height: 170px;
+	width: 170px;
 	float: left;
 }
 
