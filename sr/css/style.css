@@ -1,0 +1,689 @@
+/* RESET
+----------------------------------------------------------------------------------------------------*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video  { 
+	font-family: inherit; 
+	font-size: 100%; 
+	font-weight: inherit; 
+	font-style: inherit; 
+	vertical-align: baseline; 
+	white-space: normal;
+	text-align: left; 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0;
+	background: transparent; 
+	text-decoration: none;
+    text-rendering: optimizeLegibility;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; }
+								  
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+:focus { outline: 0; }
+
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0; }
+
+
+
+
+html { 
+	background: #f2f2f2;  
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+.page {
+	padding: 0;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+	background:rgb(255,242,209) url('../images/something.jpg') no-repeat center bottom;
+	background-size: cover;
+	}
+	
+.page1 {
+	padding: 0;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+	min-height: 960px
+}
+		
+	
+h1{
+	font-size: 2.2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1em;
+	vertical-align: top;
+	margin-bottom: .5em;
+	color: #D68331
+}
+h2{
+		font-family:'Open Sans', sans-serif;
+		font-size: 1.5em;
+		font-weight: 700;
+		color: #000;
+		letter-spacing: -1px;
+}	
+
+h3 {
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+h4{
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6em;
+}
+h4 span{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	color: #555;
+	
+}
+h5{
+	text-transform: uppercase;
+	color: #aaa;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .75em;
+	line-height: 2.5em;
+	font-weight: 700;
+}
+h6{
+	font-family:'Open Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: 900;
+	color: #000;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	
+}
+
+
+p{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+p.larger{
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #888;
+	text-align: center;
+}
+strong{
+	font-weight: 700;
+}
+a {
+	color: #000;
+}
+.underline{
+	border-bottom: 1px solid #888;
+}
+
+.wrap{
+	 max-width: 960px;
+	 padding: 20px;
+	 margin: auto;
+	 height: auto;
+	 display: block;
+	 overflow: auto;
+ }
+.no-margin{
+	margin:0;
+}
+.no-padding{
+	padding: 0;
+}
+.margin-bottom{
+	margin-bottom: 1.4em;
+}
+.margin-bottom1{
+	margin-bottom: 1em;
+}
+.pad-box{
+		padding: 20px;
+	}
+.center-align * {
+	text-align: center;
+}
+.central{
+	display: block;
+	margin-top: 80px;
+	width: 100%;
+}
+.image{
+	width: 100%;
+	height: auto;
+}
+.left{
+	float: left;
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	color: #ddd;
+	font-size: 1rem;
+}
+
+.right{
+	float: right;
+	position: fixed;
+	top: 50%;
+	right: 30px;
+	color: #ddd;
+	font-size: 1rem;
+	transition: all 0.2s ease-in-out;
+}
+.left:hover, .right:hover{
+	color: #000;
+	transition: all 0.2s ease-in-out;
+}
+
+/* ----------  buttons -------------- */
+
+
+.button {
+    font-size: 1rem;
+	color: #FFF;
+	font-weight: 900;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 2rem;
+	padding: 8px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    background-color:#ddd;
+}
+.button:hover{
+    background-color:#ccc;
+}
+.button i{
+	padding-right: 10px;
+}
+.button_folio{
+	margin-top: 20px;
+    color: #FFF;
+}
+.button_resume{
+	margin-top: 20px;
+    background-color:#ccc;
+    color: #FFF;
+}
+.button_resume:hover{
+    background-color:#bbb;
+}
+.button_landing{
+    background-color:rgba(255, 255,255, 0.8);
+    color: #a65a2a;
+}
+.button_landing:hover{
+    background-color:rgba(255, 255,255, 1);
+}
+
+.button_mail{
+	background: #ff9d3a;
+}
+.button_mail:hover{
+	background: #D68331;
+}
+
+
+/* ----------  buttons end -------------- */	
+/* ----------  header -------------- */
+
+header{
+	 z-index: 1000;
+	 top: 0px;
+	 background-color:#FFF;
+	 position: fixed;
+	 width: 100%;
+	 color: #000;
+}
+
+.name h3{
+ 	color: #000;
+ 	font-weight: 900;
+ 	letter-spacing: -1px;
+ 	line-height: 2.5rem;
+
+}
+.name h3 span{
+	 color: #888;
+	 font-weight: 300;
+	 text-transform: none;
+	 letter-spacing: 0px;
+}
+
+.name a{
+	cursor: pointer;
+}
+.name a:hover{
+	color: #ed8012;
+}
+
+.wrap .nav ul {
+	float: right;
+}
+
+.wrap .nav ul li {
+	display: inline-block;
+	margin-left: 25px;
+}
+.wrap ul li:first-child {
+	margin-left: 0;
+}
+.wrap .nav ul li a {
+    font-size: .8em;
+	color: #000;
+	font-weight: 900;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 2.5rem;
+}
+.wrap .nav ul li a:hover {
+	color: #ed8012;
+}
+
+header .wrap{
+	padding: 5px 20px;
+}
+#progressBar {
+		width: 100%;
+		height: 1px;
+		background-color: #fff;
+		position: fixed;
+		z-index: 400;
+}
+
+#progressBar div {
+		height: 100%;
+		width: 0;
+		background-color: #D68331;
+}
+.active{
+	color:#ed8012!important;
+}
+
+/* ----------  header ends -------------- */
+
+
+/* ----------  landing -------------- */
+	
+	.introtext{
+		width: 80%;
+		margin: auto;
+		padding: 20px;
+		color:#FFF;
+	}
+	.introtext .intro{
+		font-size: 1.4em;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 30px;
+		/* background: rgba(0,0,0,0.2); */
+		padding: 5px;
+	}
+
+
+	
+	#landingpic{
+		width: 100%;
+		max-width: 750px;
+		background: none;
+		margin: auto;
+		display: block;
+		position: relative;
+	}
+		
+	#banner_pic {
+	max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+  
+    }
+    
+   
+/* ----------  landing ends -------------- */
+
+/* ----------  portfolio -------------- */
+
+#portfolio{
+	background: #ffffff;
+	margin: 0;
+	padding: 0 0 50px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	color: #bbb;
+}
+	
+.portfolio_image{
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	display: block;
+	z-index: -200;
+	position: relative;
+}
+	
+.portfolio-item {
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.project-info {
+    position: absolute;
+    background: rgba(220,110,0,0.8);
+    width: inherit;
+    height: inherit;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0);
+    height: 100%;
+}
+.project-info h3 {
+    color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin: 20px 20px 0;
+	height: 40%;
+	line-height: 1.2em;
+}
+.project-info p {
+	border-top: 1px solid rgba(255, 255, 255, .6);
+	color: #fff;
+	padding: 10px 5px;
+	margin: 0 20px;
+	opacity: 0;
+	transition: all .2s ease-in-out 0.1s;
+}
+
+
+.portfolio-item:hover {
+    box-shadow: 
+        inset 0 0 0 1px rgba(255,255,255,0.1);
+}
+.portfolio-item:hover .project-info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.portfolio-item:hover .project-info p {
+    opacity: 1;
+}
+
+	
+/* ----------  portfolio ends -------------- */
+
+/* ----------  portfolio description -------------- */
+
+#project_description{
+		background: #fff;
+		height: 0;
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		overflow: hidden;
+		clear: both;
+		color: #000;
+}
+	
+	.details{
+	    float:left;
+	    width:100%;
+	    /* display: none; */
+}
+.close {
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.close img{
+	opacity: 0.3;
+	height: 60px;
+	width: 60px;
+	padding: 10px;
+	border-radius: 50%;
+	border:1px solid rgba(0,0,0,1);
+}
+
+
+.close:hover img{
+	opacity: 1;
+}
+
+/* ----------  portfolio description ends -------------- */
+
+/* --- Jukemonkey ---*/
+.jm{
+	width: 100%;
+	max-width: 400px;
+}
+/* ----------  resume -------------- */
+
+#resume{
+	background: #f6f6f6;
+}
+#resume h1{
+	color: #bbb;
+}
+#resume h2{
+	font-size: 1.4em;
+	text-transform: none;
+	font-style: italic;
+	font-weight: 400;
+	color: #dbdbdb;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 20px;
+}
+.more{
+	padding-left: 1em;
+}
+.more h4{
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+.more h4 span{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	color: #555;
+	line-height: 1.2em;
+}
+.more p{
+	font-size: .9em;
+	color: #555;
+}
+/* ---------- resume ends -------------- */
+/* ----------  about -------------- */
+
+#about{
+	background: #444;
+	color: #999;
+}
+#about h4{
+	color: #FFF;
+}
+#about img{
+	max-width: 200px;
+	margin: auto;
+	display: block;
+	
+}
+/* ----------  about ends-------------- */
+/* ----------  footer -------------- */
+#footer{
+	background: #fff;
+}
+#footer p{
+	margin:10px 0;
+}
+#footer a{
+	margin-right:20px;
+	font-size: 2rem;
+	color: #444;
+}
+#footer a:hover{
+	color: #D68331;
+}
+.icon-heart{
+	color: #D68331;
+}
+
+/* ----------  footer ends -------------- */
+/* media queries */
+
+@media only screen and (max-width: 1280px){
+.left, .right{
+	display:none;
+}
+}
+ @media only screen and (max-width: 768px){
+ .name h3{
+ 	text-align: center;
+ 	line-height: 2rem;
+ }
+.nav ul {
+	margin: 10px auto 0;
+	float: none!important;
+	text-align: center;
+}
+.central{
+	margin-top: 100px;
+}
+.introtext{
+		width:90%;
+	}
+.introtext .intro{
+	display: none;
+}
+.bottom {
+        display:none;
+    }
+.span_4 .portfolio-item{
+	margin-bottom: 1.4em;
+}
+
+.portfolio-item:after{
+	background: #eee;
+}
+.margin-bottom1{
+	margin-bottom: 0px;
+}
+.wrap .nav ul li a {
+	line-height: 2rem;
+}
+.more{
+	padding-left: 0;
+}
+#footer .col p{
+	text-align: center;
+}
+}
+@media only screen and (max-width: 480px){
+	.name span {
+		display: none;
+	}
+}
+	
+/* 
+	12 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+	VERSION - 2.0
+	LICENSED UNDER GPL & MIT
+*/
+
+
+/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+/* MAIN CONTAINER */
+.container						{ margin: 0 auto; }
+
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; }
+
+
+/* DEFAULT ROW STYLES */
+.row {} /* set according to preference*/
+			
+								  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float:left;
+	width: 100%;
+}
+
+@media ( min-width : 768px ) {
+	.col {
+		margin-left: 2%;
+	}
+}
+
+
+/* RESET MARGINS */
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+@media ( min-width : 768px ) {
+	.span_1 { width: 6.5%; }
+	.span_2 { width: 15.0%; }
+	.span_3 { width: 23.5%; }
+	.span_4 { width: 32.0%; }
+	.span_5 { width: 40.5%; }
+	.span_6 { width: 49.0%; }
+	.span_7 { width: 57.5%; }
+	.span_8 { width: 66.0%; }
+	.span_9 { width: 74.5%; }
+	.span_10 { width: 83.0%; }
+	.span_11 { width: 91.5%; }
+	.span_12 { width: 100%; }
+}
