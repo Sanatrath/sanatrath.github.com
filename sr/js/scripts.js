@@ -14,7 +14,7 @@ $(function () {
             type: "get",
             dataType: "html",
             error: function () {
-                jContent.html("<p>Page Not Found!!</p>");
+                jContent.html("<p class='margin-bottom'>Didn't think this would happen. Same origin problem. Please send me a mail if this happens. I will edit the website.</p>");
             },
             beforeSend: function () {
                 $('#project_description').css('height', 'auto');
@@ -38,10 +38,10 @@ $(function () {
                 $(".close").click(function () {
                     $('#project_description').animate({
                         height: "0"
-                    }, 500);
+                    }, 800);
                     $('body').animate({
                         scrollTop: $('#portfolio').position().top
-                    }, 500);
+                    }, 800);
                 });
 
                 $("#progressBar").fadeOut("slow");
@@ -66,7 +66,7 @@ function rotate()  {
             type: "get",
             dataType: "html",
             error: function () {
-                jContent.html("<p>Page Not Found!!</p>");
+                jContent.html("<p class='margin-bottom'>Didn't think this would happen. Same origin problem. Please send me a mail if this happens. I will edit the website.</p>");
             },
             beforeSend: function () {
                 $('#project_description').css('height', 'auto');
@@ -123,7 +123,7 @@ $(function () {
 
     $(".name a").bind('click', function (event) {
         $('html, body').stop().animate({
-            'scrollTop': 0
+            'scrollTop': '0px'
         }, 500);
     });
 });
