@@ -519,7 +519,7 @@ header .wrap{
 	right: 30px;
 }
 #project_description .change{
-	z-index: -1!important;
+	z-index: 1!important;
 	color: #ddd;
 	font-size: 1rem;
 	position: fixed;
@@ -545,6 +545,7 @@ header .wrap{
 #resume{
 	background: #f6f6f6;
 	z-index: 10;
+	position: relative;
 }
 #resume h1{
 	color: #bbb;
@@ -585,6 +586,7 @@ header .wrap{
 	background-size: cover;
 	color: #fff;
 	z-index: 10;
+	position: relative;
 }
 #about h4{
 	color: #FFF;
