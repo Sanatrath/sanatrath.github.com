@@ -198,6 +198,12 @@ a {
 	width: 100%;
 	height: auto;
 }
+::selection {
+	background: rgba(255,245,0,0.3); /* Safari */
+	}
+::-moz-selection {
+	background: rgba(255,245,0,0.3); /* Firefox */
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
