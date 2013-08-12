@@ -519,7 +519,7 @@ header .wrap{
 	right: 30px;
 }
 #project_description .change{
-	z-index: 1;
+	z-index: -1!important;
 	color: #ddd;
 	font-size: 1rem;
 	position: fixed;
