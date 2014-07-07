@@ -1,0 +1,28 @@
+#ui-overlay .ui-main .ui-tag, #ui-overlay .ui-main .ui-info, #ui-overlay .ui-main .ui-license {
+	display:none;
+}
+
+#habla_beta_container_do_not_rely_on_div_classes_or_names{
+	display:none;
+} 
+
+.ui-license{
+    display:none;
+}
+
+.stretch-width{
+    width:70%!important;
+    float:right;
+}
+.ui-credits .ui-block-white {
+padding: 10px;
+height: auto;
+}
+
+#modal{
+    display:none;
+}
+
+.ui-block{
+    background-color:rgba(0,0,0,0)!important;
+}
